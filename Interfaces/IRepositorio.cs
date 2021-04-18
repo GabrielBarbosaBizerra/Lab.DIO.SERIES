@@ -7,7 +7,7 @@ namespace DIOSeries.Interfaces
         //CRUD
         List<T> Lista();
         void Inserir(T objeto);
-        void Atualizar(T objeto, int id);
+        void Atualizar(int id, T objeto);
         void Excluir(int id);
         T RetornarPorId(int id);
         int ProximoId();                
