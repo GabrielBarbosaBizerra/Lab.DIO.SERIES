@@ -137,7 +137,7 @@ namespace DIOSeries
             Console.Write("Digite a descrição da série: ");
             string entradaDescricao = Console.ReadLine();
 
-            var serieAtualizada = new Serie(id:repositorio.ProximoId(),
+            var serieAtualizada = new Serie(id:indiceSerie,
                                       genero: (Genero)entradaGenero,
                                       titulo: entradaTitulo,
                                       ano: entradaAno,
