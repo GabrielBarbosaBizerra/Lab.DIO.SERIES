@@ -9,7 +9,7 @@ namespace DIOSeries.Interfaces
         void Inserir(T objeto);
         void Atualizar(T objeto, int id);
         void Excluir(int id);
-        void RetornarPorId(int id);
+        T RetornarPorId(int id);
         int ProximoId();                
     }
 }
