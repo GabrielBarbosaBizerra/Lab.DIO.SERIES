@@ -15,10 +15,6 @@ namespace DIOSeries.Classes
         {
             listaDeSeries.Add(serie);
         }
-        public void Atualizar(Serie serie, int id)
-        {
-            listaDeSeries[id] = serie;
-        }
         public void Excluir(int id)
         {
             listaDeSeries[id].ExcluirSerie();
@@ -30,6 +26,11 @@ namespace DIOSeries.Classes
         public int ProximoId()
         {
             return listaDeSeries.Count;
+        }
+
+        public void Atualizar(int id, Serie objeto)
+        {
+            listaDeSeries[id] = objeto;
         }
     }
 }
